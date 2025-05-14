@@ -9,36 +9,35 @@
     <h1>Calculadora científica</h1>
     <hr>
     <input type="text" id="display" readonly>
-
     <table>
-        <tr>
-            <td onclick="append('7')">7</td>
-            <td onclick="append('8')">8</td>
-            <td onclick="append('9')">9</td>
-            <td onclick="append('+')">+</td>
+    <tr>
+            <td onclick="display.value += '7'">7</td>
+            <td onclick="display.value += '8'">8</td>
+            <td onclick="display.value += '9'">9</td>
+            <td onclick="display.value += '+'">+</td>
         </tr>
         <tr>
-            <td onclick="append('4')">4</td>
-            <td onclick="append('5')">5</td>
-            <td onclick="append('6')">6</td>
-            <td onclick="append('-')">-</td>
+            <td onclick="display.value += '4'">4</td>
+            <td onclick="display.value += '5'">5</td>
+            <td onclick="display.value += '6'">6</td>
+            <td onclick="display.value += '-'">-</td>
         </tr>
         <tr>
-            <td onclick="append('1')">1</td>
-            <td onclick="append('2')">2</td>
-            <td onclick="append('3')">3</td>
-            <td onclick="append('*')">*</td>
+            <td onclick="display.value += '1'">1</td>
+            <td onclick="display.value += '2'">2</td>
+            <td onclick="display.value += '3'">3</td>
+            <td onclick="display.value += '*'">*</td>
         </tr>
         <tr>
-            <td onclick="append('0')">0</td>
-            <td onclick="append('.')">.</td>
+            <td onclick="display.value += '0'">0</td>
+            <td onclick="display.value += '.'">.</td>
             <td onclick="calculate()">=</td>
-            <td onclick="append('/')">/</td>
+            <td onclick="display.value += '/'">/</td>
         </tr>
         <tr>
             <td onclick="clearDisplay()">C</td>
             <td onclick="sqrt()">√</td>
-            <td onclick="power()">xⁿ</td>
+            <td onclick="power()">^</td>
             <td onclick="log()">log</td>
         </tr>
     </table>
